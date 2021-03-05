@@ -1,0 +1,25 @@
+:root {
+    --basic-page-bg1: #849D8F;
+    --basic-page-bg2:  #8996A6;
+    --basic-page-bg3: #9D8B84;
+}
+
+
+.page-body__index {
+    background-repeat: no-repeat;
+}
+
+.page-body__index--1 {
+    background-color: var(--basic-page-bg1);
+    background-image: url("../img/ice-creams/1-cut.jpg");
+}
+
+.page-body__index--2 {
+    background-color: var(--basic-page-bg2);
+    background-image: url("../img/ice-creams/2-cut.jpg");
+}
+
+.page-body__index--3 {
+    background-color: var(--basic-page-bg3);
+    background-image: url("../img/ice-creams/3-cut.jpg");
+}
