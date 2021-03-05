@@ -2,11 +2,32 @@
     --basic-page-bg1: #849D8F;
     --basic-page-bg2:  #8996A6;
     --basic-page-bg3: #9D8B84;
+
+    --basic-white: white;
+    --white-opacity-20: rgba(255, 255, 255, 0.2);
+    --basic-black: black;
+
+    --gray-subscribe: #F8F7F4;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px solid var(--basic-white);
+  height: 1px solid var(--basic-white);
+  margin: -1px solid var(--basic-white);
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
 .page-body__index {
     background-repeat: no-repeat;
+    background-position: top center;
 }
 
 .page-body__index--1 {
@@ -22,4 +43,216 @@
 .page-body__index--3 {
     background-color: var(--basic-page-bg3);
     background-image: url("../img/ice-creams/3-cut.jpg");
+}
+
+.page-body__catalog {
+  background-color: var(--basic-page-bg1);
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  padding: 0 27px;
+  box-sizing: border-box;
+}
+
+.wraper--map {
+  padding: 0;
+}
+
+
+/* HEADER */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 9px;
+}
+
+.header-nav {
+  width: 700px;
+  display: flex;
+}
+
+.page-header__logo {
+  width: 154px;
+   height: 64px;
+}
+
+.site-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site__item {
+  margin-right: 32px;
+}
+
+.drop-menu {
+  display: none;
+}
+
+
+.second-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+}
+
+.page-header__info-block {
+  position: absolute;
+  right: 0;
+  top: 71px
+}
+
+
+.second-menu__link {
+  display: block;
+  background-color: var(--white-opacity-20);
+  height: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.second-menu__link--search {
+  background-image: url("../img/second-menu/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.second-menu__link--login {
+  padding: 8px 16px 8px 44px;
+  border-radius: 16px;
+}
+
+.second-menu__link--cart {
+  min-width: 100px;
+  padding: 8px 16px 8px 44px;
+  border-radius: 16px;
+
+}
+
+
+/* MAIN */
+
+.main-slider {
+  min-height: 574px;
+}
+
+.main-blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-blocks__item {
+  width: 560px;
+  height: 229px;
+  border-radius: 16px
+}
+
+.main-blocks__item--raspberry {
+  background-image: url("../img/main-blocks/raspberry-bg.jpg")
+}
+
+.main-blocks__item--chocolate {
+  background-image: url("../img/main-blocks/chocolate-bg.jpg")
+}
+
+.main-blocks__item--blog {
+  height: 220px;
+  background-image: url("../img/main-blocks/strawberry-bg.jpg")
+}
+
+.main-blocks__item--subscription {
+  height: 220px;
+  background-color: var(--gray-subscribe);
+}
+
+
+.ice-cream__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+}
+
+.ice-cream__item {
+  width: 267px;
+}
+
+.ice-cream__img {
+  display: block;
+  height: 267px;
+  width: 267px;
+  border-radius: 50%;
+}
+
+
+/* FOOTER */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--basic-white);
+}
+
+.footer-socials__list {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-socials__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.footer-socials__link {
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+
+.footer-socials__link--fb {
+  background-image: url("../img/socials/fb.png");
+}
+
+.footer-socials__link--b {
+  background-image: url("../img/socials/b.png");
+}
+
+.footer-socials__link--ig {
+  background-image: url("../img/socials/ig.png");
+}
+
+.footer-socials__link--tw {
+  background-image: url("../img/socials/tw.png");
+}
+
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu__list {
+  list-style: none;
+}
+
+.footer-copyright {
+  padding-top: 18px;
+}
+
+.academy-logo {
+  background-image: url("../img/academy-logo.png");
+  width: 108px;
+  height: 39px;
 }

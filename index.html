@@ -11,11 +11,12 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body page-body__index page-body__index--1">
-  <header class="page-header">
+  <header class="page-header wrapper">
     <a href="" class="page-header__logo">
       <img src="img/gllacy-logo.svg" alt="logo" width="154" height="64">
     </a>
@@ -35,17 +36,17 @@
       </ul>
     </div>
     <div class="second-menu">
-      <div class="second-menu__search">
-        <a href="#"></a>
-      </div>
-      <div class="second-menu__login">
-        <a href="#">Вход</a>
-      </div>
-      <div class="second-menu__cart">
-        <a href="#">Пусто</a>
-      </div>
+      <!-- <div class="second-menu__search"> -->
+        <a href="#" class="second-menu__link second-menu__link--search"></a>
+      <!-- </div> -->
+      <!-- <div class="second-menu__login"> -->
+        <a href="#" class="second-menu__link second-menu__link--login">Вход</a>
+      <!-- </div> -->
+      <!-- <div class="second-menu__cart"> -->
+        <a href="#" class="second-menu__link second-menu__link--cart">Пусто</a>
+      <!-- </div> -->
     </div>
-    <div class="info-block">
+    <div class="info-block page-header__info-block">
       <p class="info-block__time">с 10 до 20, ежудневно</p>
       <a href="tel:+78124502525" class="info-block__phone" aria-label="наш телефон - 8 812 450 25 25">
         8 812 450-25-25
@@ -56,10 +57,9 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Глэйси: главная страница</h1>
-    <section class="main-slider">
+    <section class="main-slider wrapper">
       <h2 class="main-slider__header">Пломбир с помфдкой<br />и клубничный щербет</h2>
       <div class="main-slider__slide">
-        <!-- <img src="img/ice-creams/3-cut.jpg" alt="Пломбир с помфдкой и клубничный щербет" class="main-slider__second-img" width="1200" height="1000"> -->
       </div>
       <div class="main-slider__dots dots-list">
         <div class="dots__item"></div>
@@ -71,7 +71,7 @@
       </a>
     </section>
 
-    <div class="main-blocks">
+    <div class="main-blocks wrapper">
       <section class="main-blocks__item--raspberry main-blocks__item">
         <h2 class="main-blocks__header">Малинка даром!</h2>
         <p class="main-blocks__text">
@@ -89,41 +89,41 @@
       </section>
     </div>
 
-    <section class="main-hits">
+    <section class="wrapper ice-cream">
       <h2 class="visually-hidden">Мороженое-хиты</h2>
-      <ul class="hits-list">
-        <li class="hits__item">
-          <img src="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="hits__img">
-          <p class="hits__price">310 ₽ <span class="hits__price--kg">/кг</span></p>
-          <p class="hits__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <a href="#" class="hits__button button"></a>
+      <ul class="ice-cream__list">
+        <li class="ice-cream__item">
+          <img src="img/products/ice-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
+          <p class="ice-cream__price">310 ₽ <span class="ice-cream__price--kg">/кг</span></p>
+          <p class="ice-cream__text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <a href="#" class="ice-cream__button button">Быстрый просмотр</a>
         </li>
 
-        <li class="hits__item">
-          <img src="" alt="Сливочно-кофейное с кусочками шоколада" class="hits__img">
-          <p class="hits__price">380 ₽ <span class="hits__price--kg">/кг</span></p>
-          <p class="hits__text">Сливочно-кофейное с кусочками шоколада</p>
-          <a href="#" class="hits__button button"></a>
+        <li class="ice-cream__item">
+          <img src="img/products/ice-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
+          <p class="ice-cream__price">380 ₽ <span class="ice-cream__price--kg">/кг</span></p>
+          <p class="ice-cream__text">Сливочно-кофейное с кусочками шоколада</p>
+          <a href="#" class="ice-cream__button button">Быстрый просмотр</a>
         </li>
 
-        <li class="hits__item">
-          <img src="" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="hits__img">
-          <p class="hits__price">355 ₽ <span class="hits__price--kg">/кг</span></p>
-          <p class="hits__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <a href="#" class="hits__button button"></a>
+        <li class="ice-cream__item">
+          <img src="img/products/ice-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
+          <p class="ice-cream__price">355 ₽ <span class="ice-cream__price--kg">/кг</span></p>
+          <p class="ice-cream__text">Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <a href="#" class="ice-cream__button button">Быстрый просмотр</a>
         </li>
 
-        <li class="hits__item">
-          <img src="" alt="Сливочное крем-брюле с карамельной подливкой" class="hits__img">
-          <p class="hits__price">415 ₽ <span class="hits__price--kg">/кг</span></p>
-          <p class="hits__text">Сливочное крем-брюле с карамельной подливкой</p>
-          <a href="#" class="hits__button button"></a>
+        <li class="ice-cream__item">
+          <img src="img/products/ice-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="ice-cream__img ice-cream__img--hit"  width="267" height="267">
+          <p class="ice-cream__price">415 ₽ <span class="ice-cream__price--kg">/кг</span></p>
+          <p class="ice-cream__text">Сливочное крем-брюле с карамельной подливкой</p>
+          <a href="#" class="ice-cream__button button">Быстрый просмотр</a>
         </li>
 
       </ul>
     </section>
 
-    <section class="main-info">
+    <section class="wrapper main-info">
       <h2 class="main-info__header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
         производства на развес</h2>
       <ul class="main-info__list">
@@ -146,7 +146,7 @@
       </ul>
     </section>
 
-    <div class="main-blocks">
+    <div class="wrapper main-blocks">
       <article class="main-blocks__item--blog main-blocks__item">
         <h2 class="main-blocks__header main-blocks__header--blog">Новое в нашем блоге</h2>
         <a class="main-blocks__text main-blocks__text--blog">
@@ -168,12 +168,13 @@
         </form>
       </section>
     </div>
-    <section class="main-map">
+    <section class="main-map wrapper wraper--map">
       <h2 class="visually-hidden">Карта: мы тут</h2>
-      <iframe
+      <img src="img/map.jpg" alt="адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19" width="1200" height="430">
+      <!-- <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616352156!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1613418564612!5m2!1sru!2sru"
-        width="940" height="449" allowfullscreen title="адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
-      </iframe>
+        width="1200" height="430" allowfullscreen title="адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19">
+      </iframe> -->
       <div class="main-map__info map-info">
         <p class="map-info__text">
           Адрес главного офиса и офлайн-магазина:
@@ -193,7 +194,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="wrapper page-footer">
     <section class="footer-socials">
       <ul class="footer-socials__list">
         <li class="footer-socials__item">
@@ -217,15 +218,20 @@
           <a href="#" class="footer-menu__link footer-menu__link--favorit">Для поставщиков</a>
         </li>
         <li class="footer-menu__item">
-          <a href="#" class="footer-menu__link">Наши документы</a>
-        </li>
-        <li class="footer-menu__item">
           <a href="#" class="footer-menu__link">О производстве</a>
+        </li>
+      </ul>
+
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item">
+          <a href="#" class="footer-menu__link">Наши документы</a>
         </li>
         <li class="footer-menu__item">
           <a href="#" class="footer-menu__link">Экологические стандарты</a>
         </li>
       </ul>
+
+
     </section>
     <section class="footer-copyright">
       <div class="footer-copyright__logo academy-logo"></div>
