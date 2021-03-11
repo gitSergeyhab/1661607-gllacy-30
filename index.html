@@ -23,16 +23,16 @@
     <a href="index.html" class="page-header__logo">
       <img src="img/gllacy-logo.svg" alt="logo" width="154" height="64">
     </a>
+    <div class="page-header__menu-container">
     <div class="header-nav">
       <ul class="header-nav__list site-list">
         <li class="site__item"><a class="site__link" href="catalog.html">Каталог</a>
           <ul class="header-nav__drop-list drop-list">
             <li class="drop__item drop__item--new"><a class="drop__link drop__link--new" href="#">Новинки</a></li>
-            <li class="drop__item"><a class="drop__link" href="#">Сливочное</a></li>
+            <li class="drop__item"><a class="drop__link" href="catalog.html">Сливочное</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Щербеты</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Фруктовый лед</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Мелорин</a></li>
-            <!-- <li class="drop__item drop__item--new"><a class="drop__link drop__link--new" href="#">Новинки</a></li> -->
           </ul>
         </li>
         <li class="site__item"><a class="site__link" href="#">Доставка и оплата</a></li>
@@ -73,7 +73,7 @@
       </div>
 
       <div class="open-down open-down--cart">
-        <a href="#" class="second-menu__link second-menu__link--cart">Пусто</a>
+        <a href="#" class="second-menu__link second-menu__link--cart js-cart">Пусто</a>
         <div class="cart-inside second-menu__hidden-cart">
           <div class="cart-inside__products products-cart">
             <div class="products-cart__product">
@@ -125,6 +125,7 @@
       </a>
       <p class="info-block__time"></p>
     </div>
+  </div>
   </header>
 
   <main class="page-main">
@@ -166,7 +167,7 @@
     <section class="wrapper wrapper--ice-cream ice-cream">
       <h2 class="visually-hidden">Мороженое-хиты</h2>
       <ul class="ice-cream__list">
-        <li class="ice-cream__item">
+        <li class="ice-cream__item ice-cream__item--hit">
           <img src="img/products/ice-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
           <p class="ice-cream__price">310 ₽<span class="ice-cream__price--kg">/кг</span></p>
           <a href="#" class="ice-cream__text">
@@ -175,7 +176,7 @@
           <a href="#" class="standart-button standart-button--ice-cream">Быстрый просмотр</a>
         </li>
 
-        <li class="ice-cream__item">
+        <li class="ice-cream__item ice-cream__item--hit">
           <img src="img/products/ice-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
           <p class="ice-cream__price">380 ₽<span class="ice-cream__price--kg">/кг</span></p>
           <a href="#" class="ice-cream__text">
@@ -184,7 +185,7 @@
           <a href="#" class="standart-button standart-button--ice-cream">Быстрый просмотр</a>
         </li>
 
-        <li class="ice-cream__item">
+        <li class="ice-cream__item ice-cream__item--hit">
           <img src="img/products/ice-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" class="ice-cream__img ice-cream__img--hit" width="267" height="267">
           <p class="ice-cream__price">355 ₽<span class="ice-cream__price--kg">/кг</span></p>
           <a href="#" class="ice-cream__text">
@@ -193,7 +194,7 @@
           <a href="#" class="standart-button standart-button--ice-cream">Быстрый просмотр</a>
         </li>
 
-        <li class="ice-cream__item">
+        <li class="ice-cream__item ice-cream__item--hit">
           <img src="img/products/ice-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" class="ice-cream__img ice-cream__img--hit"  width="267" height="267">
           <p class="ice-cream__price">415 ₽<span class="ice-cream__price--kg">/кг</span></p>
           <a href="#" class="ice-cream__text">Сливочное крем-брюле с карамельной подливкой</a>
@@ -207,19 +208,19 @@
         <h2 class="main-info__header">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
           производства на развес</h2>
         <ul class="main-info__list main-info-list">
-          <li class="main-info__item">
+          <li class="main-info__item main-info__item-1">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
             проверенных временем технологий.
           </li>
-          <li class="main-info__item">
+          <li class="main-info__item main-info__item-2">
             Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.
           </li>
-          <li class="main-info__item">
+          <li class="main-info__item main-info__item-3">
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
             ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
-          <li class="main-info__item">
+          <li class="main-info__item main-info__item-4">
             Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.
           </li>
@@ -325,7 +326,7 @@
     </section>
     <section class="footer-copyright">
       <div class="footer-copyright__logo academy-logo"></div>
-      <div class="footer-copyright__copyright academy-text">Сделано в HTML Academy © 2019</div>
+      <div class="footer-copyright__copyright academy-text">Сделано в <a class="breadcrumbs__link" href="#">HTML Academy</a> © 2019 </div>
     </section>
   </footer>
 

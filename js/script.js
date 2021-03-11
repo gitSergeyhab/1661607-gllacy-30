@@ -1,4 +1,21 @@
 // main-slider
+let productCoubter = 0;
+const buttoSlider = document.querySelector('.standart-button--slider');
+const linkCart = document.querySelector('.js-cart');
+
+console.log(buttoSlider)
+;
+buttoSlider.addEventListener('click', (evt) => {
+  if (!productCoubter) {
+    linkCart.classList.remove('second-menu__link--cart');
+    linkCart.classList.add('second-menu__link--cart-full');
+  }
+  evt.preventDefault();
+  console.log(linkCart);
+  productCoubter += 2;
+  linkCart.textContent = productCoubter + ' товара';
+})
+
 
 const bodyImage = document.querySelector('.page-body__index');
 const dots = document.querySelectorAll('.dots__item');

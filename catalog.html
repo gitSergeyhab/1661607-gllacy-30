@@ -21,16 +21,16 @@
     <a href="index.html" class="page-header__logo">
       <img src="img/gllacy-logo.svg" alt="logo" width="154" height="64">
     </a>
+    <div class="page-header__menu-container">
     <div class="header-nav">
       <ul class="header-nav__list site-list">
-        <li class="site__item"><a class="site__link" href="catalog.html">Каталог</a>
+        <li class="site__item"><a class="site__link site__link--current" href="catalog.html">Каталог</a>
           <ul class="header-nav__drop-list drop-list">
             <li class="drop__item drop__item--new"><a class="drop__link drop__link--new" href="#">Новинки</a></li>
-            <li class="drop__item"><a class="drop__link" href="#">Сливочное</a></li>
+            <li class="drop__item"><a class="drop__link drop__link--current" href="catalog.html">Сливочное</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Щербеты</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Фруктовый лед</a></li>
             <li class="drop__item"><a class="drop__link" href="#">Мелорин</a></li>
-            <!-- <li class="drop__item drop__item--new"><a class="drop__link drop__link--new" href="#">Новинки</a></li> -->
           </ul>
         </li>
         <li class="site__item"><a class="site__link" href="#">Доставка и оплата</a></li>
@@ -71,7 +71,7 @@
       </div>
 
       <div class="open-down open-down--cart">
-        <a href="#" class="second-menu__link second-menu__link--cart">Пусто</a>
+        <a href="#" class="second-menu__link second-menu__link--cart js-cart">Пусто</a>
         <div class="cart-inside second-menu__hidden-cart">
           <div class="cart-inside__products products-cart">
             <div class="products-cart__product">
@@ -115,10 +115,6 @@
       </div>
 
 
-
-
-
-
     </div>
     <div class="info-block page-header__info-block">
       <p class="info-block__time">с 10 до 20, ежудневно</p>
@@ -127,6 +123,7 @@
       </a>
       <p class="info-block__time"></p>
     </div>
+  </div>
   </header>
 
 
@@ -437,7 +434,7 @@
     </section>
     <section class="footer-copyright">
       <div class="footer-copyright__logo academy-logo"></div>
-      <div class="footer-copyright__copyright academy-text">Сделано в HTML Academy © 2019</div>
+      <div class="footer-copyright__copyright academy-text">Сделано в <a class="breadcrumbs__link" href="#">HTML Academy</a> © 2019 </div>
     </section>
   </footer>
 
